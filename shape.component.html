@@ -1,0 +1,18 @@
+<!-- {{}}  [] lettura da ts a html -->
+<!-- () eventi che richiamo dall'html al typescript -->
+<!-- double binding <-> creare doppia associazione tra html e ts e viceversa-->
+<h3>Primo Esempio di Angular</h3>
+<p>{{counter}}</p>
+<button (click)='increment()'>Increment</button>
+<button (click)='decrement()'>Decrement</button>
+<input type=number [(ngModel)]='counterInInput'>
+<button (click)='bind()'>Submit</button>
+
+<h3>Calcolo Operations</h3>
+<input type=number [(ngModel)]='numA'>
+<input type=number [(ngModel)]='numB'>
+<button (click)='sum()'>+</button>
+<button (click)='div()'>/</button>
+<button (click)='molt()'>*</button>
+<button (click)='sott()'>-</button>
+<p>{{ result }}</p>
